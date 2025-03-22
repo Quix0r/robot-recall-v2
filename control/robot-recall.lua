@@ -372,7 +372,7 @@ function updateTeleportJobs(event)
     local warning = false
     for k, e in ipairs(storage.teleportQueue) do
         -- if (not itemstack.valid)
-        if ((not e.destination or not e.destination.valid)) then
+        if ((not e.destination or not e.destination.valid or not e.source or not e.source.valid)) then
             -- game.print("Source or destination not valid! Removing queue item!")
             
             local count
@@ -384,7 +384,7 @@ function updateTeleportJobs(event)
             if (e.source.valid) then count = e.source.insert({name=e.itemname, count=e.count}) end
             if (not count or count ~= e.count) then
                 count = count and (e.count - count) or e.count
-                e.surface.spill_item_stack(e.srcPos, {name=e.itemname, count=count})
+                e.surface.spill_item_stack({position=e.srcPos, stack={name=e.itemname, count=count}, allow_belts=false})
                 game.print(count .. " robots have been dropped at their source position, there is no room in the source.")
             end
 
@@ -439,8 +439,8 @@ function updateTeleportJobs(event)
                         if (remainder ~= 0) then
                             game.print(remainder .. " robots have been dropped in front of the recall station.")
                             local ent = 
-                                e.destination.surface.spill_item_stack(e.destination.position,
-                            {name = e.itemname, count = remainder})
+                                e.destination.surface.spill_item_stack({position=e.destination.position, stack={
+                            name = e.itemname, count = remainder}, allow_belts=false})
                             -- game.print(ent.position)
                             
                         end

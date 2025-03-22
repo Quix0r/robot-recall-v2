@@ -12,7 +12,7 @@ entity.inventory_size = settings.startup["recall-chest-size"].value
 entity.icon_size = 64
 entity.health = 350
 entity.icon_mipmaps = 4
-entity.icon = "__robot-recall__/graphics/icons/robot-recall-chest.png"
+entity.icon = "__robot-recall-v2__/graphics/icons/robot-recall-chest.png"
 entity.open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.5 }
 entity.close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.5 }
 entity.animation_sound = baseEnt.animation_sound
@@ -27,7 +27,7 @@ entity.animation =
       layers =
       {
         {
-          filename = "__robot-recall__/graphics/entity/robot-recall-chest.png",
+          filename = "__robot-recall-v2__/graphics/entity/robot-recall-chest.png",
           priority = "extra-high",
           width = 34,
           height = 38,
@@ -35,7 +35,7 @@ entity.animation =
           shift = util.by_pixel(0, -2),
           hr_version =
           {
-            filename = "__robot-recall__/graphics/entity/hr-robot-recall-chest.png",
+            filename = "__robot-recall-v2__/graphics/entity/hr-robot-recall-chest.png",
             priority = "extra-high",
             width = 66,
             height = 74,
@@ -83,7 +83,7 @@ item.name = "robot-recall-chest"
 item.place_result = "robot-recall-chest"
 item.icons = {
     {
-        icon = "__robot-recall__/graphics/icons/robot-recall-chest.png"
+        icon = "__robot-recall-v2__/graphics/icons/robot-recall-chest.png"
         -- tint = { r = 0.5, g = 0.5, b = 0.5, a = 1}
     },
 }
