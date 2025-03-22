@@ -15,7 +15,8 @@ script.on_nth_tick(15, function(event)
                                 {
                                     name = placeresult.name,
                                     position = v.ent.position,
-                                    force = v.ent.logistic_network.force
+                                    force = v.ent.logistic_network.force,
+                                    quality = v.ent.quality
                                 })
                             inv.remove({name = name, count = 1})
                         end
