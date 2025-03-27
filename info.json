@@ -1,9 +1,8 @@
 {
     "name": "robot-recall-v2",
-    "version": "0.3.3",
+    "version": "0.3.4",
     "title": "Robot Recall V2",
-    "author": "peeves91",
-    "contact": "peeves91",
+    "author": "roland77, peeves91",
     "homepage": "https://github.com/peeves91/robot-recall",
     "factorio_version": "2.0",
     "dependencies": ["base >= 2.0"],

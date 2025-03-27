@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.4
+Date: 2025-03-27
+  Changes:
+    - there are no more HR versions of sprites/graphics, all are HR now
+    - reverted checking for if source is valid, this caused that no bot was deployed
+    - split prototypes/*.lua scripts into entity, item and recipe
+    - recipes are now depending on requester(recall), passive-provider(deployment) and processing unit (both)
+---------------------------------------------------------------------------------------------------
 Version: 0.3.3
 Date: 2025-03-22
   Changes:

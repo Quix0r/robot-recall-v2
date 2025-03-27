@@ -372,7 +372,7 @@ function updateTeleportJobs(event)
     local warning = false
     for k, e in ipairs(storage.teleportQueue) do
         -- if (not itemstack.valid)
-        if ((not e.destination or not e.destination.valid or not e.source or not e.source.valid)) then
+        if ((not e.destination or not e.destination.valid)) then
             -- game.print("Source or destination not valid! Removing queue item!")
             
             local count
