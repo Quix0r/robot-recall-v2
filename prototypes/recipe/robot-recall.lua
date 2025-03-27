@@ -12,4 +12,4 @@ recipe.results = {
 table.insert(data.raw["technology"]["construction-robotics"].effects, {type="unlock-recipe", recipe="robot-recall-chest"})
 table.insert(data.raw["technology"]["logistic-robotics"].effects, {type="unlock-recipe", recipe="robot-recall-chest"})
 
-data:extend{item, entity, recipe}
+data:extend{recipe}
