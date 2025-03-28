@@ -9,7 +9,7 @@ recipe.results = {
   {type="item", name=recipe.name, amount=1}
 }
 
-table.insert(data.raw["technology"]["construction-robotics"].effects, {type="unlock-recipe", recipe="robot-recall-chest"})
-table.insert(data.raw["technology"]["logistic-robotics"].effects, {type="unlock-recipe", recipe="robot-recall-chest"})
+table.insert(data.raw["technology"]["construction-robotics"].effects, {type="unlock-recipe", recipe=recipe.name})
+table.insert(data.raw["technology"]["logistic-robotics"].effects, {type="unlock-recipe", recipe=recipe.name})
 
 data:extend{recipe}
