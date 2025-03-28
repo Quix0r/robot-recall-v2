@@ -5,6 +5,6 @@ end
 
 -- Load all data
 for _, prototype in pairs({"entity", "item", "recipe"}) do
-    require("prototypes." .. prototype ..".robot-recall")
-    require("prototypes." .. prototype ..".robot-redistribute")
+  require("prototypes." .. prototype .. ".robot-recall")
+  require("prototypes." .. prototype .. ".robot-redistribute")
 end

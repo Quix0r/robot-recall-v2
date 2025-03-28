@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.5
+Date: 2025-03-28
+  Changes:
+    - recall must be internally a passive provider chest so that the recalled bots
+      are being passivly provided (for e.g. storage or being brought to recycler)
+    - deployment stations are internally requester chests so that requested bots
+      are being delivered there
+---------------------------------------------------------------------------------------------------
 Version: 0.3.4
 Date: 2025-03-27
   Changes:

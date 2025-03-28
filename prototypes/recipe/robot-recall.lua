@@ -1,7 +1,7 @@
-local recipe = table.deepcopy(data.raw.recipe["requester-chest"])
+local recipe = table.deepcopy(data.raw.recipe["passive-provider-chest"])
 recipe.enabled = false;
 recipe.ingredients = {
-    {type="item", name="requester-chest", amount=1},
+    {type="item", name="passive-provider-chest", amount=1},
     {type="item", name="processing-unit", amount=1}
 }
 recipe.name = "robot-recall-chest"
